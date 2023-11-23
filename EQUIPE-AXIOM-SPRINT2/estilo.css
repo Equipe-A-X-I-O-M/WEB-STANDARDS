@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&family=Ubuntu:wght@400;500;600;700;800;900&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #1A0544;
+}
+
+header {
+    width: 80%;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-header {
+    width: 201px;
+    height: 36px;
+}
+
+header nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a {
+    font-family: Raleway, sans-serif;
+    color: #EFE2EE;
+    text-decoration: none;
+    text-align: center;
+}
+
+header .nav-item{
+    font-weight: 400;
+}
+
+
+#arobocup:hover {
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(270deg, #F7BA5A 3.7%, #F1AD35 16.8%, #F1864F 43%, #F05272 68.3%);
+    border-image-slice: 1;
+    text-align: center;
+    width: 25%;
+}
+
+#aquemSomos:hover {
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(270deg, #F7BA5A 3.7%, #F1AD35 16.8%, #F1864F 43%, #F05272 68.3%);
+    border-image-slice: 1;
+    text-align: center;
+    width: 22%;
+}
+
+#arobo:hover {
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(270deg, #F7BA5A 3.7%, #F1AD35 16.8%, #F1864F 43%, #F05272 68.3%);
+    border-image-slice: 1;
+    text-align: center;
+    width: 25%;
+}
+
+#asocio:hover {
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(270deg, #F7BA5A 3.7%, #F1AD35 16.8%, #F1864F 43%, #F05272 68.3%);
+    border-image-slice: 1;
+    text-align: center;
+    width: 17%;
+}
+
+hr {
+    width: 90%;
+    margin: auto;
+    border-bottom: 1px solid #EFE2EE;
+}
+
+
+.banner {
+    width: 80%;
+    margin: auto;
+    height: 538px;
+    align-items: center;
+}
+
+.fundo-banner {
+    width: 635px;
+    height: 538px;
+    position: absolute;
+    margin-left: 42.8%;
+}
+
+.esp-banner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 {
+    color: #E0E0E0;
+    font-family: Raleway, sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+h1 {
+    color: #E0E0E0;
+    font-family: Raleway, sans-serif;
+    font-size: 150px;
+    font-weight: 900;
+}
+
+.banner button {
+    width: 120px;
+    height: 50px;
+    color: #fff;
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    border-radius: 10px;
+    background: #5A1C52;
+    border: 1px solid #2E1157;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.eva {
+    width: 360px;
+    height: 335px;
+    position: absolute;
+    margin-left: 55%;
+}
+
+#robocup {
+    width: 80%;
+    height: 750px;
+    margin: auto;
+    align-items: center;
+}
+
+.fundo-robocup {
+    width: 707px;
+    height: 520px;
+    position: absolute;
+    margin-left: -15%;
+}
+
+.esp-robocup {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h2 {
+    color: #E0E0E0;
+    font-family: Raleway, sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    position: relative;
+    margin-top: 12%;
+
+}
+
+.info-robocup {
+    width: 100%;
+    height: 350px;
+    border-radius: 40px;
+    background: rgba(46, 17, 87, 0.85);
+    color: #fff;
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3%;
+    align-items: center;
+    text-align: justify;
+    position: relative;
+    margin-bottom: 8%;
+    margin-top: 5%;
+}
+
+.info-robocup p {
+    width: 40%;
+}
+
+.img-robocup {
+    width: 480px;
+    height: 353px;
+}
+
+#quemSomos {
+    width: 80%;
+    height: 700px;
+    margin: auto;
+    align-items: center;
+
+}
+
+.fundo-quemSomos {
+    width: 670px;
+    height: 283px;
+    position: absolute;
+    margin-left: -15%;
+}
+
+.info-quemSomos {
+    width: 100%;
+    height: 350px;
+    color: #fff;
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3%;
+    text-align: justify;
+    position: relative;
+    /* margin-bottom: 8%; */
+    margin-top: 10%;
+}
+
+.sombra-img {
+    background: rgba(239, 226, 238, 0.80);
+    width: 480px;
+    height: 353px;
+    position: absolute;
+    margin-right: 59%;
+    margin-bottom: 10%;
+}
+
+.img-quemSomos {
+    width: 480px;
+    height: 353px;
+    position: absolute;
+    margin-right: 53%;
+    margin-bottom: 5%;
+}
+
+.info-quemSomos p {
+    width: 40%;
+    height: 375px;
+    margin-left: 45%;
+}
+
+#equipe {
+    width: 80%;
+    height: 550px;
+    margin: auto;
+    margin-bottom: 502px;
+    ;
+}
+
+#equipe article {
+    margin-top: 5%;
+}
+
+.perfis {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.perfil {
+    height: 350px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nome {
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: rgba(100, 59, 150, 0.85);
+    width: 200px;
+    height: 60px;
+    color: #fff;
+    font-family: Raleway, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+}
+
+.fundo-equipe {
+    width: 46%;
+    position: relative;
+    margin-left: 66.5%;
+    margin-top: -13%;
+}
+
+#robo {
+    width: 80%;
+    height: 1200px;
+    margin: auto;
+    align-items: center;
+    color: #fff;
+    font-family: Raleway, sans-serif;
+}
+
+.fundo-robo {
+    width: 707px;
+    height: 520px;
+    position: absolute;
+    margin-left: -15%;
+    margin-top: -8%;
+}
+
+.esp-robo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.art-robo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50%;
+    margin-top: 3%;
+}
+
+.art1 {
+    width: 40%;
+    height: 70%;
+    border-radius: 40px;
+    background: rgba(46, 17, 87, 0.85);
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+    align-items: center;
+    position: relative;
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+
+.art2 {
+    width: 20%;
+    height: 90%;
+    border-radius: 40px;
+    background: rgba(46, 17, 87, 0.85);
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+    align-items: center;
+    position: relative;
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+
+.carousel input {
+    position: absolute;
+    left: -10000px;
+}
+
+.carousel {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.carousel__stage {
+    overflow: hidden;
+    font-size: 0;
+    white-space: nowrap;
+    width: 100%;
+    height: 80%;
+    transition: text-indent 500ms;
+    position: relative;
+}
+
+.carousel__item {
+    display: inline-block;
+    text-indent: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+
+.carousel__control {
+    display: none;
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 1;
+    font-size: 1rem;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.carousel__prev {
+    left: 0;
+}
+
+.carousel__prev::after {
+    content: ' < ';
+    display: inline-block;
+}
+
+.carousel__next {
+    right: 0;
+}
+
+.carousel__next::after {
+    content: ' > ';
+    display: inline-block;
+}
+
+#carousel1:checked~.carousel__stage {
+    text-indent: 0;
+}
+
+#carousel2:checked~.carousel__stage {
+    text-indent: -100%;
+}
+
+#carousel3:checked~.carousel__stage {
+    text-indent: -200%;
+}
+
+#carousel4:checked~.carousel__stage {
+    text-indent: -300%;
+}
+
+#carousel1:checked~.carousel__stage .carousel__item:nth-child(1) .carousel__control,
+#carousel2:checked~.carousel__stage .carousel__item:nth-child(2) .carousel__control,
+#carousel3:checked~.carousel__stage .carousel__item:nth-child(3) .carousel__control,
+#carousel4:checked~.carousel__stage .carousel__item:nth-child(4) .carousel__control {
+    display: block;
+}
+
+#socio {
+    width: 80%;
+    margin-top: 50%;
+    height: 700px;
+    margin: auto;
+    align-items: center;
+    color: #fff;
+    font-family: Raleway, sans-serif;
+
+}
+
+.art-socio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    margin-top: 3%;
+}
+
+.art1-socio {
+    width: 40%;
+    height: 90%;
+    border-radius: 40px;
+    background: rgba(46, 17, 87, 0.85);
+    display: flex;
+    justify-content: flex-start;
+    padding: 3%;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+
+.art2-socio {
+    width: 30%;
+    height: 90%;
+    border-radius: 40px;
+    background: rgba(46, 17, 87, 0.85);
+    display: flex;
+    justify-content: flex-start;
+    padding: 3%;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+
+.fundo-socio {
+    width: 715px;
+    height: 65%;
+    position: absolute;
+    z-index: -2;
+    margin-left: 37%;
+    margin-top: 20%;
+}
+
+footer {
+    width: 80%;
+    height: 380px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+}
+
+.footer1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-eva {
+    width: 263px;
+    height: 288px;
+}
+
+.info-footer {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer ul {
+    color: #fff;
+    font-family: Raleway, sans-serif;
+    font-size: 12px;
+}
+
+footer span {
+    color: #fff;
+    font-family: Raleway, sans-serif;
+    font-size: 12px;
+}
+
+.logo-footer {
+    width: 314px;
+    height: 100px;
+}
+
+.line-footer {
+    width: 100%;
+    height: 1px;
+    border: transparent;
+    background: linear-gradient(90deg, #F1AD35 4.68%, #F05272 98.27%);
+}
+
+.by {
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.line {
+    width: 100%;
+    border: transparent;
+    height: 10px;
+    background: linear-gradient(90deg, #F1AD35 4.68%, #F05272 98.27%);
+}
