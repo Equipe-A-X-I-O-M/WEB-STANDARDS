@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&family=Ubuntu:wght@400;500;600;700;800;900&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+
+:root {
+  /* COLORS */
+  --bg-color-primary: rgb(25, 5, 66);
+  --bg-color-indigo-primary: #5a1c52;
+  --bg-color-indigo-secondary: #22051e;
+  --bg-color-blue-primary: #22345a;
+  --stroke-color-blue: #475d81;
+
+  --title-color: #fadbf6;
+  --text-color-primary: rgb(255, 255, 255);
+  --text-color-blue-gray: #e2e8f0;
+
+  --bs-primary: rgb(89, 28, 81);
+  --bs-primary-rgb: 89, 28, 81;
+  --bs-accordion-btn-bg: var(--bg-color-primary);
+  --bs-accordion-bg: var(--bg-color-primary);
+  --bs-body-color-rgb: 255, 255, 255;
+
+  /* FONTS */
+  --body-font: 'Raleway', sans-serif;
+  --title-font: 'Raleway', sans-serif;
+
+  /* SIZING */
+  --main-title-font-size: 5rem;
+  --body-font-size: 1.25rem;
+  --title-font-size: 2rem;
+  --subtitle-font-size: 1.65rem;
+  --btn-font-size: 1.1rem;
+  --menu-items-font-size: 1.15rem;
+
+  --section-spacing: 5rem;
+
+  --img-border-radius: 10px;
+  --btn-border-radius: 5px;
+
+  /* Z INDEX*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/* COMMON */
+body {
+  overflow-x: hidden;
+  font: 300 var(--body-font-size) var(--body-font);
+  color: var(--text-color-primary) !important;
+}
+
+.bg-purple {
+  background-color: var(--bg-color-primary) !important;
+}
+
+.bg-darkpurple {
+  background-color: rgba(46, 17, 87, 0.85) !important;
+}
+
+.logo {
+  font: 900 3rem var(--title-font);
+  color: var(--title-color) !important;
+}
+
+section#inicio.section {
+  padding-top: 9rem;
+  padding-bottom: var(--section-spacing);
+}
+
+.section {
+  padding: var(--section-spacing) 0;
+  color: var(--text-color-primary) !important;
+}
+
+.section-title {
+  font-family: var(--body-font);
+  font-weight: 900;
+  color: var(--title-color) !important;
+  font-size: 3rem;
+  margin-top: 2%;
+}
+
+h1 {
+  font-family: var(--title-font);
+  font-weight: 900;
+  color: #e0e0e0 !important;
+  font-size: 150px;
+}
+
+h1 #display-eva {
+  color: #e0e0e0 !important;
+  font: 900 var(--main-title-font-size) var(--title-font);
+}
+
+.section-subtitle {
+  font-family: var(--body-font);
+  font-weight: 900;
+  color: #f2b80e !important;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.section-description {
+  margin-top: 1.25rem;
+}
+
+.bg-light {
+  background: #fadbf6 !important;
+}
+
+.bg-text {
+  background: rgba(46, 17, 87, 0.85);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.bg-text-color {
+  background: rgba(46, 17, 87, 0.85);
+}
+
+.fundo-robo {
+  width: 707px;
+  height: 520px;
+  position: absolute;
+  margin-left: -15%;
+  margin-top: -8%;
+  z-index: -1;
+}
+.fundo-banner {
+  width: 635px;
+  height: 538px;
+  position: absolute;
+  margin-left: 50%;
+  z-index: -1;
+}
+.fundo-robocup {
+  width: 707px;
+  height: 520px;
+  position: absolute;
+  z-index: -1;
+  margin-left: -15%;
+  margin-top: -10%;
+}
+
+.fundo-quemSomos {
+  width: 670px;
+  height: 283px;
+  position: absolute;
+  z-index: -1;
+  margin-left: -15%;
+  margin-top: -5%;
+}
+
+.fundo-equipe {
+  width: 635px;
+  height: 538px;
+  position: absolute;
+  margin-left: 55%;
+  margin-top: -28%;
+  z-index: -1;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+b {
+  font-weight: 700 !important;
+}
+
+.mt-6 {
+  margin-top: 4rem !important;
+}
+
+/* Bootstrap changing */
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #22051e;
+  --bs-btn-hover-border-color: #22051e;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #22051e;
+  --bs-btn-active-border-color: #22051e;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--bs-primary);
+  --bs-btn-disabled-border-color: var(--bs-primary);
+}
+
+.accordion-button,
+.list-group-item {
+  background-color: var(--bs-primary);
+}
+
+.accordion-button:not(.collapsed) {
+  color: white;
+}
+
+.bg-darkerblue {
+  background-color: var(--bs-primary) !important;
+}
+
+.line-footer {
+  width: 100%;
+  height: 1px;
+  border: transparent;
+  background: linear-gradient(90deg, #f1ad35 4.68%, #f05272 98.27%);
+}
+
+.line {
+  width: 100%;
+  border: transparent;
+  height: 10px;
+  margin-top: 1.25rem;
+  background: linear-gradient(90deg, #f1ad35 4.68%, #f05272 98.27%);
+}
+
+.bg-gradient-button {
+  background: #f1ad35;
+  background: linear-gradient(135deg, #f1ad35 0%, #f05272 100%);
+}
+
+footer {
+  font-family: Raleway, sans-serif;
+  font-size: 1rem;
+}
+
+.text-body-emphasis {
+  color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
+}
+
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+  background-color: hsl(0, 0%, 65%);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: hsl(0, 0%, 50%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 0.5rem;
+  background-color: hsl(0, 0%, 45%);
+}
+
+/*=============== SCROLL UP ===============*/
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: 3rem;
+  background-color: var(--title-color);
+  display: inline-flex;
+  padding: 8px;
+  font-size: 1.25rem;
+  color: var(--bs-primary);
+  z-index: var(--z-tooltip);
+  transition: bottom 0.4s, transform 0.4s, background-color 0.4s;
+}
+
+.scrollup:hover {
+  transform: translateY(-0.5rem);
+}
+
+/* Show Scroll Up */
+.show-scroll {
+  bottom: 3rem;
+}
+
+/* For large devices */
+@media screen and (min-width: 1150px) {
+  .scrollup {
+    right: 3rem;
+  }
+}

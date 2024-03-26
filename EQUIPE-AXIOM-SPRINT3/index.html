@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A.X.I.O.M | FIAP Robocup</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="imagex/svg" href="assets/img/logoEva.svg" />
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
+      crossorigin=""
+      />
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+  </head>
+
+  <body class="bg-purple">
+
+    <header>
+      <!-- MENU -->
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-purple" id="navbar-menu">
+        <div class="container">
+          <a class="navbar-brand text-light" href="#">
+          <span class="logo">A.X.I.O.M</span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse nav-masthead justify-content-end float-md-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#sobre">Sobre </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#robocup">Robocup</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#quemSomos">Quem Somos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#equipe">Equipe</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#startup" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false"> A.X.I.O.M </a>
+                <ul class="dropdown-menu text-light">
+                  <li>
+                    <a class="dropdown-item" href="pages/associate.html">Seja Sócio</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- <li class="nav-item">
+                <a class="nav-link text-light" href="#construcao">Construção</a>
+                </li> -->
+
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#contato">Fale Conosco</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <hr />
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <div class="container scrollspy-example" data-bs-spy="scroll" data-bs-target="#navbar-menu"
+        data-bs-root-margin="0px 0px -20%" data-bs-smooth-scroll="true" tabindex="0">
+
+        <!-- SECTION 1 - BANNER -->
+        <section id="inicio" class="section">
+          <div class="container">
+            <img class="fundo-banner" src="assets/img/fundoBanner.png" alt="fundo" />
+            <div class="row justify-content-center align-items-center">
+              <div class="col-12 col-md-6">
+                <article
+                  class="d-flex flex-column flex-column justify-content-center align-items-center text-center">
+                  <h2 class="section-title">CONHEÇA</h2>
+                  <h1 class="display-eva">EVA!</h1>
+                  <a href="#sobre" class="btn btn-primary btn-lg">Saiba mais</a>
+                </article>
+              </div>
+              <div class="col-12 col-md-4">
+                <figure class="figure d-flex align-items-center justify-content-center">
+                  <img src="assets/img/eva.svg" class="figure-img img-fluid rounded rounded-4 mx-auto d-block"
+                    alt="desenho da eva" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 2 - CAROUSEL DE 5 IMAGENS -->
+        <!-- CONHEÇA A ROBÔ -->
+
+        <section id="sobre" class="section">
+          <div class="container">
+            <img class="fundo-robo" src="assets/img/fundoRobo1.png" alt="fundo" />
+
+            <!-- TITLE -->
+            <h2 class="pb-2 section-title">Conheça a Robô</h2>
+            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+              <article class="col-12 col-md-6 d-flex flex-column align-items-start gap-2 bg-text rounded-4">
+                <p class="text-body text-justify mb-3"> Vamos iniciar com um pequeno resumo sobre a jornada da E.V.A, a robô
+                  projetada pela equipe <b>A.X.I.O.M</b> para participar do <b>RoboCup</b> da FIAP, competição
+                  cujo objetivo é estourar o balão do adversário, localizado no centro da parte superior de cada
+                  robô. 
+                </p>
+                <p class="text-body text-justify"> Durante esse processo, nossa equipe construiu a robô do zero, desenvolvendo
+                  desde estrutura até a programação, alcançando uma solução personalizada para o desafio buscando
+                  promover a robótica educacional e sustentável para nossos alunos. 
+                </p>
+              </article>
+
+              <div class="col-12 col-md-6">
+                <!-- IMAGES -->
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner rounded-4">
+                    <div class="carousel-item active">
+                      <img src="assets/img/robozinho1.jpg" class="d-block w-100"
+                        alt="base triangular com alguns componentes básicos do robo" />
+                    </div>
+
+                    <div class="carousel-item">
+                      <img src="assets/img/robozinho2.jpg" class="d-block w-100"
+                        alt="demonstrativo da primeira versao do desenho da base" />
+                    </div>
+
+                    <div class="carousel-item">
+                      <img src="assets/img/robozinho3.jpg" class="d-block w-100"
+                        alt="robo finalizado armas abertas na visao frontal" />
+                    </div>
+                  </div>
+
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                  </button>
+
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Próximo</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- SECTION 3 - SOBRE O ROBOCUP -->
+        <section id="robocup" class="section container">
+          <img class="fundo-robocup" src="assets/img/fundoRobocup.png" alt="fundo" />
+
+          <!-- TITLE -->
+          <h2 class="pb-2 section-title">Sobre o RoboCup</h2>
+
+          <div class="row row-cols-1 row-cols-md-2 align-items-md-center bg-text mt-6 rounded-4">
+            <!-- IMAGENS -->
+            <div class="col-12 col-md-6 my-4 order-last d-flex flex-column align-items-center justify-content-center">
+              <figure class="d-flex flex-column align-items-center justify-content-center">
+                <img class="img-fluid img-thumbnail bg-light rounded-4" src="assets/img/robocup.png"
+                  alt="Robocup-equipes lutando na arena do FIAP NEXT">
+              </figure>
+            </div>
+
+            <!-- TEXTO -->
+            <div class="col-12 col-md-6 order-first">
+              <article class="mx-3">
+                <p class="text-body text-justify mb-3"> O <b></b>RoboCup </b> é uma das competições mais antigas da FIAP, sendo
+                  esta exclusiva para os alunos do primeiro ano do bacharelado em Sistemas de Informação. 
+                </p>
+                <p class="text-body text-justify mb-3"> Esse evento permite a integração de todas as disciplinas do ano letivo,
+                  com o objetivo de construir um robô de combate. A meta da batalha é estourar o balão do robô
+                  adversário, seguindo as normas e regulamentos estabelecidos pelos professores. 
+                </p>
+                <p class="text-body text-justify mb-3"> Esse evento permite a integração de todas as disciplinas do ano letivo,
+                  com o objetivo de construir um robô de combate. A meta da batalha é estourar o balão do robô
+                  adversário, seguindo as normas e regulamentos estabelecidos pelos professores. 
+                </p>
+                </p>
+                <p class="text-body text-justify"> E é nesse contexto, que a startup Axiom nasce! </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- SECTION 4 - QUEM SOMOS -->
+        <section id="quemSomos" class="section container">
+          <img class="fundo-quemSomos" src="assets/img/fundoQuemSomos.png" alt="fundo" />
+
+          <!-- TITLE -->
+          <h2 class="pb-2 section-title">Quem Somos</h2>
+          <div class="row row-cols-1 row-cols-md-2 align-items-md-center mt-6 rounded-4">
+
+            <!-- IMAGENS -->
+            <div class="col-12 col-md-6 order-first d-flex flex-column align-items-center justify-content-center my-4 ">
+              <figure class="d-flex flex-column align-items-center justify-content-center">
+                <img class="img-fluid img-thumbnail bg-light rounded-4" src="assets/img/competicao.jpg"
+                  alt="Robocup-robos na arena do FIAP NEXT">
+              </figure>
+            </div>
+
+            <!-- TEXTO -->
+            <div class="col-12 col-md-6 order-last">
+              <article class="mx-3">
+                <p class="text-body text-justify mb-3"> A startup <b>Axiom</b> promove a conscientização ambiental por meio da robótica educacional. Nosso
+                  propósito é desenvolver uma nova geração de robôs que incorporam práticas sustentáveis, utilizando
+                  materiais recicláveis em suas construções e estimulando os princípios do ESG. 
+                </p>
+                <p class="text-body text-justify mb-3"> Com intuito de promover a sustentabilidade e tornar a robótica uma ferramenta de aprendizado
+                  mais acessível, unimos educação, inovação e responsabilidade ambiental, além das nossas habilidades
+                  para criar o nosso próprio robô: a <b>E.V.A!</b>
+                </p>
+                <p class="text-body text-justify mb-3"> Ela é a inspiração de como solucionar os problemas de forma criativa e lógica para inovar a
+                  educação, visando a robótica e um futuro mais sustentável e é a partir deste valores que a E.V.A
+                  participará do Robocup 2024 promovida pela <b>FIAP</b>! 
+                </p>
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 5 - EQUIPE -->
+        <section id="equipe" class="section container">
+
+          <!-- TITLE -->
+          <h2 class="pb-2 section-title mb-5">Equipe</h2>
+
+          <!-- TEXTO -->
+          <div class="col-12">
+            <article class="mx-3">
+              <p class="text-body text-justify mb-3"> Nossa equipe é uma sinergia de talentos diversificados e apaixonados pela tecnologia que contribuem para o projeto com suas experiências únicas. Com profissionais que vão desde especialistas em desenvolvimento de sistemas e programação, até entusiastas de modelagem 3D e experts em marketing e gestão de projetos, formamos um grupo coeso e dinâmico. 
+              </p>
+              <p class="text-body text-justify"> Estamos comprometidos não apenas com o aprendizado contínuo, mas também com a aplicação prática de nossos conhecimentos para criar soluções impactantes e acessíveis, moldando um futuro tecnológico promissor.
+              </p>
+            </article>
+          </div>
+
+          <!-- IMAGENS -->
+          <div class="row d-flex justify-content-around align-items-center">
+            <div class="col-md-3 col-sm-5 col-xs-9 m-4">
+              <img
+                class="img-fluid img-thumbnail bg-light"
+                src="assets/img/equipe/Anny.png"
+                alt="Perfil da integrante Anny"
+                />
+              <div class="mt-3 text-center">
+                <h3 class="fw-bold">Anny Pereira</h3>
+                <span>Sócia e Desenvolvedora</span>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-5 col-xs-9 m-4">
+              <img
+                class="img-fluid img-thumbnail bg-light"
+                src="assets/img/equipe/Daniel.png"
+                alt="Perfil do integrante Daniel"
+                />
+              <div class="mt-3 text-center">
+                <h3 class="fw-bold">Daniel Araki</h3>
+                <span>Sócio e Desenvolvedor</span>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-5 col-xs-9 m-4">
+              <img
+                class="img-fluid img-thumbnail bg-light"
+                src="assets/img/equipe/Giovanna.png"
+                alt="Perfil da integrante Giovanna"
+                />
+              <div class="mt-3 text-center">
+                <h3 class="fw-bold">Giovanna Makida</h3>
+                <span>Sócia e Desenvolvedora</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row d-flex justify-content-around align-items-center">
+            <div class="col-md-3 col-sm-5 col-xs-9 my-4 mx-5">
+              <img
+                class="img-fluid img-thumbnail bg-light"
+                src="assets/img/equipe/Katharine.png"
+                alt="Perfil da integrante Katharine"
+                />
+              <div class="mt-3 text-center">
+                <h3 class="fw-bold">Katharine Fernandes</h3>
+                <span>Sócia e Desenvolvedora</span>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-5 col-xs-9 my-4 mx-5">
+              <img
+                class="img-fluid img-thumbnail bg-light"
+                src="assets/img/equipe/Larissa.png"
+                alt="Perfil da integrante Larissa"
+                />
+              <div class="mt-3 text-center">
+                <h3 class="fw-bold">Larissa Souza</h3>
+                <span>Sócia e Desenvolvedora</span>
+              </div>
+            </div>
+          </div>
+          
+          <img class="fundo-equipe" src="assets/img/fundoBanner.png" alt="fundo" />
+        </section>
+
+        <!-- SECTION 6 - SOBRE A STARTUP -->
+        <section id="startup" class="section container">
+
+          <!-- TITLE -->
+          <h2 class="pb-2 section-title mt-5 mb-5" style="margin-top: 12%;">Startup</h2>
+          <div class="card my-3 bg-transparent border p-4">
+            <div class="row g-0">
+              <!-- TEXTO -->
+              <div
+                class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center"
+                >
+                <div class="card-body text-light">
+                  <p class="card-text text-justify lh-sm">  
+                    Como estudantes de Sistemas de Informação também estamos engajados na concepção de nossa própria empresa, uma startup brasileira inovadora e que busca promover a conscientização ambiental por meio da robótica educacional. 
+                  </p>
+                  <p class="card-text text-justify lh-sm">
+                    Nossa visão é desenvolver uma nova geração de robôs que incorporam práticas sustentáveis, utilizando materiais recicláveis e seguindo os princípios do ESG.
+                  </p>
+                  <p class="card-text text-justify lh-sm">
+                    Acreditamos que unir educação, inovação e responsabilidade ambiental é fundamental para construir um futuro mais sustentável e tecnologicamente capacitado no qual a Axiom desempenha um papel crucial.
+                  </p>
+                  <p>
+                    Se interessou?
+                    <strong>Clique no botão abaixo para saber mais</strong>
+                  </p>
+                  <a class="btn btn-primary btn-lg" href="pages/associate.html">
+                  Seja Nosso Sócio-Investidor</a
+                    >
+                </div>
+              </div>
+
+              <!-- IMAGEM -->
+              <figure class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center">
+                <img
+                  class="img-fluid"
+                  src="assets/img/graph.png"
+                  alt="Gráfico de regressão linear ilustrativo"
+                  />
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 7 - CONTATO FORMULÁRIO -->
+        <section id="contato" class="section container mb-5">
+          <img class="fundo-robo" src="assets/img/fundoRobo1.png" alt="fundo" />
+
+          <!-- TITLE -->
+          <h2 class="pb-2 section-title mb-5">Entre em contato conosco</h2>
+
+          <!-- FORMS -->
+          <div class="row d-flex align-items-center justify-content-center">
+            <div class="row gx-5 justify-content-center">
+              <div class="col-lg-8 col-xl-6">
+                <form action="" class="contact__form" id="contact-form">
+                  <!-- NOME COMPLETO -->
+                  <div class="form-floating text-black mb-3">
+                    <input
+                      name="user_name"
+                      class="form-control"
+                      id="name"
+                      type="text"
+                      placeholder="Informe o seu nome completo..."
+                      data-sb-validations="required"
+                      />
+                    <label class="text-black" for="name">Nome Completo</label>
+                  </div>
+
+                  <!-- ENDEREÇO DE EMAIL -->
+                  <div class="form-floating text-black mb-3">
+                    <input
+                      name="user_email"
+                      class="form-control"
+                      id="email"
+                      type="email"
+                      placeholder="name@example.com"
+                      required
+                      />
+                    <label class="text-black" for="email">Endereço de Email</label>
+                  </div>
+
+                  <!-- ASSUNTO DO CONTATO-->
+                  <div class="form-floating text-black mb-3">
+                    <input
+                      name="user_subject"
+                      class="form-control"
+                      id="assunto"
+                      type="text"
+                      placeholder="Informe o assunto do contato..."
+                      data-sb-validations="required"
+                      />
+                    <label class="text-black" for="assunto">Assunto</label>
+                  </div>
+
+                  <!-- MENSAGEM -->
+                  <div class="form-floating text-black mb-3">
+                    <textarea
+                      name="user_message"
+                      class="form-control"
+                      id="message"
+                      type="text"
+                      placeholder="Escreva sua mensagem aqui..."
+                      style="height: 10rem"
+                      required
+                      ></textarea>
+                    <label class="text-black" for="message">Mensagem</label>
+                  </div>
+
+                  <div class="col-12 mb-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="invalidCheck2"
+                        required
+                        />
+                      <label class="form-check-label" for="invalidCheck2">
+                      Concordo com os termos e condições!
+                      </label>
+                    </div>
+                  </div>
+                  <p class="contact__message" id="contact-message"></p>
+
+                  <!-- BOTÃO ENVIAR -->
+                  <div class="d-grid col-12">
+                    <button
+                      class="btn bg-gradient-button btn-lg text-white fw-bold"
+                      type="submit"
+                      >
+                    Enviar
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- FIM MAIN -->
+
+
+    <!-- FOOTER -->
+    <footer class="footer mt-auto pt-3 border-top bg-purple" id="footer">
+      <div class="container">
+        <div class="row footer-align d-flex justify-content-between align-items-center" id="lists">
+         
+         <!-- Figura -->
+          <div class="col-md-auto footer-scale footer-order-1 text-center">
+            <figure class="figure">
+              <img src="assets/img/logoEva.svg" class="figure-img img-fluid" alt="Desenho - Mascote EVA">
+            </figure>
+          </div>
+
+          <div class="col-lg-auto footer-order-2 mb-3">
+            <div class="row">
+              <div class="col">
+                <!-- Atendimento - Lista -->
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <b class="nav-link text-light" asp-controller="" asp-action="">Atendimento</b>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" asp-controller="" asp-action="">FAQ </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="https://github.com/Equipe-A-X-I-O-M" target="_blank" >Entrar em contato</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" asp-controller="" asp-action="">Termos de Uso </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col">
+                <!-- Mapa do site -->
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <b class="nav-link text-light" asp-controller="" asp-action="">Mapa do site</b>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="#">Home </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="#sobre">Sobre </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" aria-current="page" href="#robocup">Robocup</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" aria-current="page" href="#quemSomos">Quem Somos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link text-light" aria-current="page" href="#startup"> A.X.I.O.M </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" aria-current="page" href="#construcao">Construção</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" aria-current="page" href="#contato">Fale Conosco</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Logomarca -->
+          <div class="col-md-auto footer-order-3 text-center">
+            <figure class="figure">
+              <img src="assets/img/logoFooter.svg" class="figure-img img-fluid" alt="Logomarca da AXIOM">
+            </figure>
+          </div>
+        </div>
+        <hr class="line-footer" />
+
+        <div class="row g-2">
+          <div class="footer-info d-flex justify-content-between">
+            <div class="col col-sm d-flex justify-content-between">
+              <span>
+              &copy; 2023 | FIAP 
+              </span>
+              <span>
+              <a class="nav-link text-light" href="https://github.com/Equipe-A-X-I-O-M" target="_blank">Desenvolvido por AXIOM</a>
+              </span>
+              <span>
+              Todos os direitos reservados
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bar line"> </div>
+    </footer>
+
+  </body>
+
+  <!--========== SCROLL UP ==========-->
+  <a href="#" class="scrollup" id="scroll-up">
+  <i class="ri-arrow-up-s-line"></i>
+  </a>
+  <!--=============== SCROLLREVEAL ===============-->
+  <script src="assets/js/scrollreveal.min.js"></script>
+  <!--=============== BOOTSTRAP ===============-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <!--=============== EMAIL JS ===============-->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+
+</html>
