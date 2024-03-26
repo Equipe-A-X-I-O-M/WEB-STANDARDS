@@ -277,3 +277,20 @@ footer {
     right: 3rem;
   }
 }
+
+/*
+
+  $grid-breakpoints: (
+    // Extra small screen / phone
+    xs: 0,
+    // Small screen / phone
+    sm: 576px,
+    // Medium screen / tablet
+    md: 768px,
+    // Large screen / desktop
+    lg: 992px,
+    // Extra large screen / wide desktop
+    xl: 1200px
+  );
+
+ */
