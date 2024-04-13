@@ -23,9 +23,11 @@
 
   <body class="bg-purple">
 
+    <!-- HEADER -->
     <header>
+      <hr>
       <!-- MENU -->
-      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-purple" id="navbar-menu">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark border-bottom bg-purple" id="navbar-menu">
         <div class="container">
           <a class="navbar-brand text-light" href="">
           <span class="logo">A.X.I.O.M</span>
@@ -38,35 +40,35 @@
 
           <div class="collapse navbar-collapse nav-masthead justify-content-end float-md-end" id="navbarNavDropdown">
             <ul class="navbar-nav">
-              <li class="nav-item">
+              <li class="nav-item pe-2">
                 <a class="nav-link active text-light" aria-current="page" href="#sobre">Sobre </a>
               </li>
 
-              <li class="nav-item">
+              <li class="nav-item pe-2">
                 <a class="nav-link text-light" href="#robocup">Robocup</a>
               </li>
 
-              <li class="nav-item">
+              <li class="nav-item pe-2">
                 <a class="nav-link text-light" href="#quemSomos">Quem Somos</a>
               </li>
 
-              <li class="nav-item">
+              <li class="nav-item pe-2">
                 <a class="nav-link text-light" href="#equipe">Equipe</a>
               </li>
 
-              <li class="nav-item dropdown">
+              <li class="nav-item pe-2 dropdown">
                 <a class="nav-link dropdown-toggle text-light" href="#startup" role="button"
                   data-bs-toggle="dropdown" aria-expanded="false"> A.X.I.O.M </a>
                 <ul class="dropdown-menu text-light">
                   <li>
-                    <a class="dropdown-item" href="pages/associate.html">Seja Sócio</a>
+                    <a class="dropdown-item" href="pages/login.html">Seja Sócio</a>
                   </li>
                 </ul>
               </li>
 
-              <!-- <li class="nav-item">
-                <a class="nav-link text-light" href="#construcao">Construção</a>
-                </li> -->
+              <li class="nav-item pe-2">
+                <a class="nav-link text-light" href="#manual-de-brincadeiras">Manual</a>
+              </li>
 
               <li class="nav-item">
                 <a class="nav-link text-light" href="#contato">Fale Conosco</a>
@@ -75,8 +77,10 @@
           </div>
         </div>
       </nav>
-      <hr />
+      <hr>
     </header>
+    <!-- FIM HEADER -->
+
 
     <!-- MAIN -->
     <main>
@@ -87,6 +91,7 @@
         <section id="inicio" class="section">
           <div class="container">
             <!-- <img class="fundo-banner" src="assets/img/fundoBanner.png" alt="fundo" /> -->
+
             <div class="row justify-content-center align-items-center">
               <div class="col-12 col-md-6">
                 <article
@@ -106,9 +111,9 @@
           </div>
         </section>
 
+
         <!-- SECTION 2 - CAROUSEL DE 5 IMAGENS -->
         <!-- CONHEÇA A ROBÔ -->
-
         <section id="sobre" class="section">
           <div class="container">
             <!-- <img class="fundo-robo" src="assets/img/fundoRobo1.png" alt="fundo" /> -->
@@ -241,6 +246,7 @@
           </div>
         </section>
 
+
         <!-- SECTION 5 - EQUIPE -->
         <section id="equipe" class="section container">
 
@@ -325,6 +331,7 @@
           <!-- <img class="fundo-equipe" src="assets/img/fundoBanner.png" alt="fundo" /> -->
         </section>
 
+
         <!-- SECTION 6 - SOBRE A STARTUP -->
         <section id="startup" class="section container">
 
@@ -348,9 +355,9 @@
                   </p>
                   <p>
                     Se interessou?
-                    <strong>Clique no botão abaixo para saber mais</strong>
+                    <span class="fw-bold">Clique no botão abaixo para saber mais</span>
                   </p>
-                  <a class="btn btn-primary btn-lg" href="pages/associate.html">
+                  <a class="btn btn-primary btn-lg" href="pages/login.html">
                   Seja Nosso Sócio-Investidor</a
                     >
                 </div>
@@ -368,7 +375,161 @@
           </div>
         </section>
 
-        <!-- SECTION 7 - CONTATO FORMULÁRIO -->
+        
+        <!-- SECTION 7 - MANUAL DE BRINCADEIROS -->
+        <section id="manual-de-brincadeiras" class="section container">
+            <article class=""><h2 class="pb-2 border-bottom section-title">Manual de Brincadeiras</h2>
+              <p class="lh-sm text-justify">Já pensou em montar sua própria E.V.A para aprender um pouco mais sobre robótica e programação? Confira aqui as melhores dicas para seguir ao construir o seu robô.
+                </p>
+                <p class="lh-sm text-justify"><span class="fw-bold">E é claro que nós da A.X.I.O.M temos todo o suporte técnico necessário para isso</span>, não hesite em entrar em contato ou participar dos nossos workshops e cursos de robótica. Divirta-se construindo e brincando com o seu próprio robô sustentável!</p>
+            </article>
+              
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item bg-purple text-light">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-color" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  <h5>PASSO 01 - PLANEJE O SEU ROBÔ</h5>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+                <div class="accordion-body">
+                  <p class="text-body text-justify mb-3">Antes de começar, imagine como será o seu robô. Que aparência ele terá? Como se moverá e quais truques poderá fazer? Uma das primeiras coisas a se fazer antes de iniciar a construção do seu robô é ter uma ideia clara do seu projeto, além de conhecer muito bem o seu objetivo, e desenhar como você quer que o seu robô se pareça pode te ajudar nisso.</p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="accordion-item bg-purple text-light">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-color" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <h5>PASSO 02 - REÚNA OS MATERIAIS BÁSICOS</h5>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+                <div class="accordion-body">
+                  <p class="text-body text-justify mb-3">Procure por materiais recicláveis que possam ser utilizados para a construção do seu robô. Garrafas plásticas, papelão, latas, CDs, tampinhas, palitos de sorvete, entre outros itens, podem ser transformados em partes do seu robô. Não se esqueça de garantir cola, tesoura, fita adesiva e outros materiais para a montagem.</p>
+                </div>
+              </div> 
+            </div>
+
+            <div class="accordion-item bg-purple text-light">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-color" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <h5>PASSO 03 - SELECIONE OS COMPONENTES ELETRÔNICOS</h5>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+                <div class="accordion-body">
+                  <p class="text-body text-justify mb-3">Além dos materiais básicos, você vai precisar de componentes eletrônicos para dar vida ao seu robô e como o <span class="fw-bold">Arduino Uno</span>, uma pequena placa com um microcomputador simples e fácil de programar que atua como o cérebro do robô, controlando seus movimentos, sensores e interações com o ambiente.</p>
+                  
+                  <p class="text-body text-justify mb-3">Também serão necessários <span class="fw-bold">cabos conectores do tipo jumper, 4 Pilhas AA e um suporte para pilhas</span>, além de um <span class="fw-bold">motor DC</span> e um <span class="fw-bold">Shield de Motor L293D</span>, se quiser mais potência no movimento do seu robô.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-purple text-light">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-color" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  <h5>PASSO 04 - CONSTRUA A ESTRUTURA BASE</h5>
+                </button>
+                </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+                <div class="accordion-body">
+                  <p class="text-body text-justify mb-3">Para a base do robô, você pode usar diferentes materiais, como o MDF, metal, plástico ou o acrílico, mas é importante que o "chassi" do seu robô, ou melhor, o esqueleto, consiga sustentar e organizar os outros componentes dele.</p>
+
+                  <p class="text-body text-justify mb-3">Lembre-se: você vai precisar montar os eixos das rodas que precisam se movimentar livremente, além do Arduino e componentes eletrônicos também ficarem na base, então planeje bem o seu espaço e dê preferência para bases triangulares ou retangulares.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-purple text-light">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-color" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  <h5>PASSO 05 - MONTAR RODAS, EIXOS E INSTALAR O MOTOR</h5>
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+                <div class="accordion-body">
+                  <p class="text-body text-justify mb-3">As rodas são essenciais para a locomoção do seu robô, então precisam ser bem firmes e ter boa aderência com as superfícies. Uma dica é usar tampinhas de garrafa PET nas rodas da frente e CDs nas de trás, cole 2 ou 3 CDs para aumentar a largura da roda.</p>
+
+                  <p class="text-body text-justify mb-3">Para os eixos, use palitos de churrasco, 1 para o dianteiro e 1 para o traseiro, pois ajudam a garantir o equilíbrio das rodas e deixe os eixos livres para o movimento de rotação.</p>
+
+                  <p class="text-body text-justify mb-3">Por fim, para conectar o eixo traseiro ao motor do Arduino, basta ter uma peça em formato de disco por onde vão elásticos e assim, quando o motor girar, ele vai transferir o movimento de rotação para o robô.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-purple text-light">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-color" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseFive">
+                  <h5>PASSO 06 - CONEXÃO DOS COMPONENTES ELETRÔNICOS</h5>
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+                <div class="accordion-body">
+                  <p class="text-body text-justify mb-3">Agora é hora de conectar os motores e demais componentes eletrônicos à estrutura do seu robô.</p>
+
+                  <p class="text-body text-justify mb-3"> Primeiro, certifique-se de posicionar corretamente o Arduino e o suporte para pilhas na base do robô, garantindo espaço e acesso adequados para os cabos e conexões. Depois, conecte os cabos dos motores aos terminais correspondentes no Shield de Motor L293D e conecte-os ao Arduino, utilizando os cabos jumper.</p>
+
+                  <p class="text-body text-justify mb-3">Por fim, verifique as conexões e veja se estão firmes e bem encaixadas, pois uma conexão mal feita pode causar mau funcionamento ou danos aos componentes e assim, sua estrutura estará pronta para receber a programação e dar vida ao seu robô!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-purple text-light">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-color" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseFive">
+                  <h5>PASSO 07 - PROGRAMAÇÃO DO MOVIMENTO</h5>
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+                <div class="accordion-body">
+                  <p class="text-body text-justify mb-3">Para programar o movimento do seu robô, você pode utilizar o Tinkercad ou o SCRATCH.</p>
+                  
+                  <p class="text-body text-justify mb-3">Se você já está familiarizado com linguagens de programação, pode utilizar o C++ junto com o Tinkercad para programar o movimento do seu robô de forma mais avançada.</p>
+                    
+                  <p class="text-body text-justify mb-3">Caso contrário, não se preocupe! Você pode usar o SCRATCH, um programa de programação em blocos que simplifica o processo.</p>
+                  
+                  <p class="text-body text-justify mb-3">Experimente diferentes sequências de movimento e comandos para criar um robô único. Com isso feito, conecte o Arduino no computador e faça a transferência do código.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-purple text-light">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-color" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseFive">
+                  <h5>PASSO 08 - PERSONALIZE O VISUAL DO SEU ROBÔ</h5>
+                </button>
+              </h2>
+              <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+                <div class="accordion-body">
+                  <p class="text-body text-justify mb-3">Agora é hora de deixar o seu robô com a sua cara! Utilize materiais coloridos, adesivos, tintas e outros elementos para personalizar o visual do seu robô e divirta-se personalizando-o conforme sua imaginação!</p>
+                    
+                  <p class="text-body text-justify mb-3">Lembre-se: A beleza do seu robô é um complemento para a eficiência da sua criação e uma ótima oportunidade de criar um visual que reflita sua personalidade.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-purple text-light">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-color" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseFive">
+                  <h5>PASSO 09 - TESTE E APROVEITE</h5>
+                </button>
+              </h2>
+              <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+                <div class="accordion-body">
+                  <p class="text-body text-justify mb-3">Após finalizar todas as etapas da construção do seu robô, prepare-se para uma jornada de diversão e aprendizado!</p>
+
+                  <p class="text-body text-justify mb-3">Chegou a hora de ligar o seu robô e testá-lo, mas lembre-se: este é apenas um guia básico, explore diferentes materiais recicláveis e técnicas de montagem para criar um robô único e personalizado.</p>
+
+                  <p class="text-body text-justify mb-3">Aproveite ao máximo o tempo com o seu robô! Além de se divertir, você estará se preparando para um futuro incrível, adquirindo novas habilidades e conhecimentos valiosos para a sua vida profissional.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- SECTION 8 - CONTATO FORMULÁRIO -->
         <section id="contato" class="section container mb-5">
           <!-- <img class="fundo-robo" src="assets/img/fundoRobo1.png" alt="fundo" /> -->
 
@@ -522,7 +683,7 @@
                     <a class="nav-link text-light" aria-current="page" href="#startup"> A.X.I.O.M </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-light" aria-current="page" href="#construcao">Construção</a>
+                    <a class="nav-link text-light" aria-current="page" href="#construcao">Manual</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-light" aria-current="page" href="#contato">Fale Conosco</a>

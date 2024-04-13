@@ -28,7 +28,8 @@ function sendEmail(e) {
       },
       () => {
         // Show error message
-        contactMessage.textContent = 'Message não enviada (Erro no processo) ❌'
+        contactMessage.textContent =
+          'Mensagem não enviada (Erro no processo) ❌'
       }
     )
 }

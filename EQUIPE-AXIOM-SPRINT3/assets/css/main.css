@@ -4,20 +4,22 @@
 :root {
   /* COLORS */
   --bg-color-primary: rgb(25, 5, 66);
-  --bg-color-indigo-primary: #5a1c52;
-  --bg-color-indigo-secondary: #22051e;
-  --bg-color-blue-primary: #22345a;
-  --stroke-color-blue: #475d81;
+  --bg-color-indigo-primary: rgb(90, 28, 82);
+  --bg-color-indigo-secondary: rgb(55, 15, 50);
+  --bg-color-blue-primary: rgb(34, 52, 90);
+  --stroke-color-blue: rgb(71, 93, 129);
 
-  --title-color: #fadbf6;
+  --title-color: rgb(250, 219, 246);
   --text-color-primary: rgb(255, 255, 255);
-  --text-color-blue-gray: #e2e8f0;
+  --text-color-blue-gray: rgb(226, 232, 240);
 
   --bs-primary: rgb(89, 28, 81);
   --bs-primary-rgb: 89, 28, 81;
   --bs-accordion-btn-bg: var(--bg-color-primary);
-  --bs-accordion-bg: var(--bg-color-primary);
+  --bs-accordion-color: var(--title-color);
+  --bs-accordion-bg: var(--bg-color-primary) !important;
   --bs-body-color-rgb: 255, 255, 255;
+  --bs-accordion-dark: rgb(55, 15, 50);
 
   /* FONTS */
   --body-font: 'Raleway', sans-serif;
@@ -31,7 +33,7 @@
   --btn-font-size: 1.1rem;
   --menu-items-font-size: 1.15rem;
 
-  --section-spacing: 5rem;
+  --section-spacing: 4.5rem;
 
   --img-border-radius: 10px;
   --btn-border-radius: 5px;
@@ -39,6 +41,10 @@
   /* Z INDEX*/
   --z-tooltip: 10;
   --z-fixed: 100;
+
+  /*ACCORDION*/
+  --bs-accordion-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+  --bs-accordion-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
 }
 
 /* COMMON */
@@ -54,6 +60,10 @@ body {
 
 .bg-darkpurple {
   background-color: rgba(46, 17, 87, 0.85) !important;
+}
+
+.text-color {
+  color: var(--title-color) !important;
 }
 
 .logo {
@@ -82,12 +92,12 @@ section#inicio.section {
 h1 {
   font-family: var(--title-font);
   font-weight: 900;
-  color: #e0e0e0 !important;
+  color: rgb(224, 224, 224) !important;
   font-size: 150px;
 }
 
 h1 #display-eva {
-  color: #e0e0e0 !important;
+  color: rgb(224, 224, 224) !important;
   font: 900 var(--main-title-font-size) var(--title-font);
 }
 
@@ -104,7 +114,7 @@ h1 #display-eva {
 }
 
 .bg-light {
-  background: #fadbf6 !important;
+  background: rgb(250, 219, 246) !important;
 }
 
 .bg-text {
@@ -120,42 +130,42 @@ h1 #display-eva {
 .fundo-robo {
   width: 707px;
   height: 520px;
-  position: absolute;
   margin-left: -15%;
   margin-top: -8%;
+  position: absolute;
   z-index: -1;
 }
 .fundo-banner {
   width: 635px;
   height: 538px;
+  margin-left: 55%;
   position: absolute;
-  margin-left: 50%;
   z-index: -1;
 }
 .fundo-robocup {
   width: 707px;
   height: 520px;
-  position: absolute;
-  z-index: -1;
   margin-left: -15%;
   margin-top: -10%;
+  position: absolute;
+  z-index: -1;
 }
 
 .fundo-quemSomos {
   width: 670px;
   height: 283px;
-  position: absolute;
-  z-index: -1;
   margin-left: -15%;
   margin-top: -5%;
+  position: absolute;
+  z-index: -1;
 }
 
 .fundo-equipe {
   width: 635px;
   height: 538px;
-  position: absolute;
   margin-left: 55%;
   margin-top: -28%;
+  position: absolute;
   z-index: -1;
 }
 
@@ -173,29 +183,37 @@ b {
 
 /* Bootstrap changing */
 .btn-primary {
-  --bs-btn-color: #fff;
+  --bs-btn-color: rgb(255, 255, 255);
   --bs-btn-bg: var(--bs-primary);
   --bs-btn-border-color: var(--bs-primary);
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #22051e;
-  --bs-btn-hover-border-color: #22051e;
+  --bs-btn-hover-color: rgb(255, 255, 255);
+  --bs-btn-hover-bg: rgb(55, 15, 50);
+  --bs-btn-hover-border-color: rgb(55, 15, 50);
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #22051e;
-  --bs-btn-active-border-color: #22051e;
+  --bs-btn-active-color: rgb(255, 255, 255);
+  --bs-btn-active-bg: rgb(55, 15, 50);
+  --bs-btn-active-border-color: rgb(55, 15, 50);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-color: rgb(255, 255, 255);
   --bs-btn-disabled-bg: var(--bs-primary);
   --bs-btn-disabled-border-color: var(--bs-primary);
 }
 
 .accordion-button,
 .list-group-item {
-  background-color: var(--bs-primary);
+  background-color: var(--bs-primary) !important;
+}
+
+.accordion-button::after {
+  background-image: var(--bs-accordion-icon) !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-active-icon) !important;
 }
 
 .accordion-button:not(.collapsed) {
-  color: white;
+  background-color: var(--bs-accordion-dark) !important;
 }
 
 .bg-darkerblue {
@@ -206,7 +224,11 @@ b {
   width: 100%;
   height: 1px;
   border: transparent;
-  background: linear-gradient(90deg, #f1ad35 4.68%, #f05272 98.27%);
+  background: linear-gradient(
+    90deg,
+    rgb(241, 173, 53) 4.68%,
+    rgb(240, 82, 114) 98.27%
+  );
 }
 
 .line {
@@ -214,12 +236,20 @@ b {
   border: transparent;
   height: 10px;
   margin-top: 1.25rem;
-  background: linear-gradient(90deg, #f1ad35 4.68%, #f05272 98.27%);
+  background: linear-gradient(
+    90deg,
+    rgb(241, 173, 53) 4.68%,
+    rgb(240, 82, 114) 98.27%
+  );
 }
 
 .bg-gradient-button {
-  background: #f1ad35;
-  background: linear-gradient(135deg, #f1ad35 0%, #f05272 100%);
+  background: rgb(241, 173, 53);
+  background: linear-gradient(
+    135deg,
+    rgb(241, 173, 53) 0%,
+    rgb(240, 82, 114) 100%
+  );
 }
 
 footer {
@@ -272,7 +302,7 @@ footer {
 }
 
 /* For large devices */
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1200px) {
   .scrollup {
     right: 3rem;
   }
