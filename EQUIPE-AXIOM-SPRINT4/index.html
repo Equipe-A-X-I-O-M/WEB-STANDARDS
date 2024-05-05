@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A.X.I.O.M | FIAP MiniGame Robocup</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="imagex/svg" href="assets/img/logoEva.svg" />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
+      crossorigin=""
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+  </head>
+
+  <body>
+    <!-- PLACAR DA DISPUTA -->
+    <header>
+      <div class="placar">
+        <div class="placarRobo1">
+          <img
+            class="RoboPlacar"
+            src="./assets/img/iconEva.png"
+            alt="Robô E.V.A"
+          />
+          <div class="pontos">
+            <p class="align-middle mb-0" id="placarEva">100</p>
+          </div>
+        </div>
+
+        <div class="pontos">
+          <p class="align-middle mb-0">X</p>
+        </div>
+
+        <div class="placarRobo2">
+          <div class="pontos">
+            <p class="align-middle mb-0" id="placarWallE">100</p>
+          </div>
+          <img
+            class="RoboPlacar"
+            src="./assets/img/iconWallE.png"
+            alt="Robô Wall-E"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="inicio">
+        <img
+          class="img-fluid"
+          src="./assets/img/logo.svg"
+          alt="Logo escrito Luna com uma Lua dourada em cima da letra U"
+        />
+
+        <button
+          class="btn bg-gradient-button btn-lg text-white fw-bold"
+          onclick="NovaPartida()"
+        >
+          NOVA PARTIDA
+        </button>
+      </div>
+
+      <div class="resultado">
+        <h1>O ROBÔ VENCEDOR É</h1>
+        <img
+          class="roboVencedor bgYellow"
+          id="roboVencedor"
+          src="./assets/img/iconEva.png"
+          alt="Imagem do Robô vencedor da disputa"
+        />
+        <button
+          class="btn bg-gradient-button btn-lg text-white fw-bold"
+          onclick="Voltar()"
+        >
+          VOLTAR
+        </button>
+      </div>
+
+      <div class="container">
+        <div class="arena">
+          <div class="robos">
+            <img
+              class="robozinho iconEva"
+              id="iconEva"
+              src="./assets/img/iconEva.png"
+              alt="Robô E.V.A"
+            />
+            <img
+              class="robozinho iconWallE"
+              id="iconWallE"
+              src="./assets/img/iconWallE.png"
+              alt="Robô Wall-E"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

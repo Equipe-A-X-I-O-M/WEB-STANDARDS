@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800;900&family=Ubuntu:wght@400;500;600;700;800;900&display=swap');
+
+/* RESETANDO A PÁGINA */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+}
+
+/* DEFININDO VARIÁVEIS */
+:root {
+  --color-light: rgb(250, 228, 247);
+  --color-dark: #292727;
+  --color-gray: #494543;
+  --color-black: #1e1917;
+}
+
+header {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* PLACAR */
+.placar {
+  display: flex;
+}
+
+.RoboPlacar {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-top: 10vh;
+}
+
+.placarRobo1 {
+  display: flex;
+}
+
+.placarRobo2 {
+  display: flex;
+}
+
+.pontos {
+  width: 3rem;
+  height: 3rem;
+  margin: 12vh 0.5rem 0 0.5rem;
+  border-radius: 50%;
+
+  font-size: 1.25rem;
+  font-weight: bolder;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-light);
+}
+
+/* IMAGEM DE FUNDO */
+body {
+  background-image: url(../img/fundo.png);
+}
+
+/* ARENA */
+.container {
+  margin-top: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arena {
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: var(--color-light);
+  box-shadow: 6px 6px 6px 6px var(--color-gray);
+  position: relative;
+}
+
+/* AJUSTANDO ROBÔS NA ARENA */
+.robos {
+  width: 35%;
+  height: 75vh;
+  border-radius: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.robozinho {
+  width: 50px;
+  height: 50px;
+  border-radius: 65%;
+  box-shadow: 3px 5px 5px var(--color-gray);
+  position: absolute;
+  background-color: rgb(241, 173, 53);
+}
+
+/* BG ROBÔS */
+.bgYellow {
+  background-color: rgb(241, 173, 53);
+}
+
+.bgPink {
+  background-color: rgb(243, 141, 162);
+}
+
+/* INICIO */
+.inicio {
+  width: 100%;
+  height: 100%;
+
+  background-image: url(../img/fundo.png);
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
+
+.inicio.inactive {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.logo {
+  margin: 3rem 0 3rem 0;
+}
+
+.bg-gradient-button {
+  background: rgb(241, 173, 53);
+  background: linear-gradient(
+    135deg,
+    rgb(241, 173, 53) 0%,
+    rgb(240, 82, 114) 100%
+  );
+}
+
+/* RESULTADO */
+.resultado {
+  width: 100%;
+  height: 100%;
+
+  background-image: url(../img/fundo.png);
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  opacity: 0;
+  visibility: hidden;
+
+  z-index: 1;
+}
+
+.resultado.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+h1 {
+  color: var(--color-light);
+  font-weight: 900;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 3px 3px 3px #343333;
+}
+
+.roboVencedor {
+  height: 50vh;
+  border-radius: 50%;
+  margin: 2rem 0 2rem 0;
+  box-shadow: 6px 6px 6px 6px var(--color-gray);
+}
