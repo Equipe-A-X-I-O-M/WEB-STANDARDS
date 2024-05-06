@@ -31,30 +31,30 @@
     <!-- PLACAR DA DISPUTA -->
     <header>
       <div class="placar">
-        <div class="placarRobo1">
-          <img
-            class="RoboPlacar"
-            src="./assets/img/iconEva.png"
-            alt="Robô E.V.A"
-          />
-          <div class="pontos">
-            <p class="align-middle mb-0" id="placarEva">100</p>
+        <div class="placarRobo">
+          <div class="dadosRobo">
+            <img
+              class="roboPlacar"
+              src="./assets/img/iconEva.png"
+              alt="Robô E.V.A"
+            />
+            <p class="nomeRobo text-light">E.V.A</p>
           </div>
+          <p class="pontos" id="placarEva">100</p>
         </div>
 
-        <div class="pontos">
-          <p class="align-middle mb-0">X</p>
-        </div>
+        <p class="pontos">X</p>
 
-        <div class="placarRobo2">
-          <div class="pontos">
-            <p class="align-middle mb-0" id="placarWallE">100</p>
+        <div class="placarRobo">
+          <p class="pontos" id="placarWallE">100</p>
+          <div class="dadosRobo">
+            <img
+              class="roboPlacar"
+              src="./assets/img/iconWallE.png"
+              alt="Robô Wall-E"
+            />
+            <p class="nomeRobo text-light">WALL-E</p>
           </div>
-          <img
-            class="RoboPlacar"
-            src="./assets/img/iconWallE.png"
-            alt="Robô Wall-E"
-          />
         </div>
       </div>
     </header>
@@ -69,7 +69,7 @@
 
         <button
           class="btn bg-gradient-button btn-lg text-white fw-bold"
-          onclick="NovaPartida()"
+          onclick="novaPartida()"
         >
           NOVA PARTIDA
         </button>
@@ -85,13 +85,15 @@
         />
         <button
           class="btn bg-gradient-button btn-lg text-white fw-bold"
-          onclick="Voltar()"
+          onclick="voltar()"
         >
           VOLTAR
         </button>
       </div>
 
-      <div class="container">
+      <div
+        class="container d-flex justify-content-center align-items-center mt-4"
+      >
         <div class="arena">
           <div class="robos">
             <img

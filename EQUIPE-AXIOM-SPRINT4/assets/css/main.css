@@ -2,9 +2,6 @@
 
 /* RESETANDO A PÁGINA */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   font-family: 'Dosis', sans-serif;
 }
 
@@ -18,35 +15,42 @@
 
 header {
   width: 100%;
-  height: 12vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 /* PLACAR */
-.placar {
-  display: flex;
-}
-
-.RoboPlacar {
+.roboPlacar {
   width: 3.5rem;
   height: 3.5rem;
-  margin-top: 10vh;
+  margin-top: 2.65rem;
 }
 
-.placarRobo1 {
+.placar,
+.placarRobo {
   display: flex;
 }
 
-.placarRobo2 {
+.dadosRobo {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nomeRobo {
+  width: 5rem;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 0.5rem;
+  text-shadow: 3px 3px 3px #343333;
 }
 
 .pontos {
   width: 3rem;
   height: 3rem;
-  margin: 12vh 0.5rem 0 0.5rem;
+  margin: 3rem 0.5rem 0 0.5rem;
   border-radius: 50%;
 
   font-size: 1.25rem;
@@ -65,13 +69,6 @@ body {
 }
 
 /* ARENA */
-.container {
-  margin-top: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .arena {
   width: 800px;
   height: 500px;
@@ -104,7 +101,6 @@ body {
 .bgYellow {
   background-color: rgb(241, 173, 53);
 }
-
 .bgPink {
   background-color: rgb(243, 141, 162);
 }
